@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <!--
+      other.htm - Secondary page for final project
+      Kody Horstman
+      April 12, 2018
+   -->
+
+   <link rel="stylesheet" href="mainstyle.css" type="text/css" />
+   <title>Final Project Website | More</title>
+   <style type="text/css">
+      table, th, td {
+         margin: 5px auto;
+         border: solid 2px black;
+         border-collapse: collapse;
+      }
+      th {
+         padding: 5px
+      }
+      td {
+         text-align: center;
+      }
+      input[type=text] {
+         border: 0;
+         padding: 5px;
+         width: 93%;
+         color: white;
+         background-color: #333f8e;
+      }
+      input[type=submit] {
+         background-color: #333fae;
+         color: white;
+         padding: 5px;
+         border: solid 1px darkgrey;
+         border-radius: 3px;
+      }
+      figure {
+         text-align: center;
+         margin: 5px;
+      }
+      figure img {
+         width: 80%;
+      }
+      figcaption {
+         color: darkgrey;
+      }
+   </style>
+</head>
+<body>
+   <header id="topother">
+      <a href="index.htm">
+      <img src="images/Option1.png" alt="Final Project Website"
+         height="75px"/>
+      </a>
+      <nav>
+         <ul>
+            <li><a href="index.htm#topother">Home</a></li>
+            <li><a href="other.htm#tophome">Other</a></li>
+         </ul>
+      </nav>
+   </header>
+   <div class="wrapper">
+<!-- Content goes here -->
+      <h1>I Also Learned...</h1>
+      <section><!-- Begin Table section -->
+         <h2>How to Use Tables and Forms</h2>
+         <p>How to use a form to accept user input and a table to orginize data as
+            I like.</p>
+         <form id="userIn" name="userIn" method="post">
+            <table>
+               <tr>
+                  <th rowspan="2">Name</th>
+                  <th rowspan="2">Favorite Ice Cream Flavor</th>
+                  <th colspan="2">Lactose Intolerant</th>
+               </tr>
+               <tr>
+                  <th>Yes</th>
+                  <th>No</th>
+               </tr>
+               <tr>
+                  <td><input type="text" name="userName" id="userID" placeholder="Enter Name" /></td>
+                  <td><input type="text" name="userFavFlavor" id="userFavFlavor" placeholder="Enter Flavor" /></td>
+                  <td><input type="radio" name="lactose" id="intolerant" /></td>
+                  <td><input type="radio" name="lactose" id="tolerant" /></td>
+               </tr>
+            </table>
+         </form>
+         <p>Usually, there would be an <input type="submit" value="Update" onclick="alert('Info Updated!');"/>
+            button (click it) that would call a JavaScript function to do something with the data.
+            However, we did not learn JavaScript.</p>
+      </section><!-- end Table section -->
+      <section><!-- Begin Picture section -->
+         <h2>How to Use Pictures</h2>
+         <p>In this course, I also learned how to add pictures to my webpage to add appeal.
+            For instance, who doesn't love puppies and kitties?
+         <figure>
+            <img src="images/puppykitty.jpg" alt="Cute doggy and kitty.">
+            <figcaption>
+               Caption: These are cute.
+            </figcaption>
+         </figure></p>
+      </section>
+<!-- end Content -->
+   </div>
+   <footer>
+      <a href="#topother">Back to Top</a>
+      <p>Unfortunately--but quite clearly--I don't know a lot about design.</p>
+   </footer>
+</body>
+</html>
